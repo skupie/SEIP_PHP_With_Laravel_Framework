@@ -15,7 +15,35 @@ class HelloWorld
         $this -> y = 20;
     }
     public function index()
-    {
+    {echo "DO While Loop: ";
+        //do while starts
+        $this->i = 10;
+        do{
+            echo $this->i."&nbsp";
+            $this->i++;
+        }while($this->i<20);
+
+        //do while ends
+    echo "<br/>"."<br/>";
+        echo "While Loop: ";
+//        while loop starts
+        $this->i = 10;
+        while($this->i<=20){
+            echo $this->i."&nbsp &nbsp";
+            $this->i++;
+        }
+        echo "<br/>"."<br/>";
+//        while loop ends
+
+        echo"For Loop: ";
+//        for loop starts
+        for($this->i = 1; $this->i<=100; $this->i++){
+            echo $this->i; echo" &nbsp &nbsp" ;
+        }
+
+        echo "<br/>"."<br/>";
+//        for loop ends
+        
         $this -> z = $this->x - $this->y; 
          switch ( $this->z )
         {
