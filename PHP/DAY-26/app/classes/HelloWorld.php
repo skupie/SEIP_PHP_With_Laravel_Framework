@@ -16,6 +16,25 @@ class HelloWorld
     }
     public function index()
     {
+         switch ($this->z)
+        {
+            case 10:
+                echo "Hello World";
+                break;
+
+            case 20:
+                echo "Hello Bangladesh";
+                break;
+
+            case 30:
+                echo "Hello BITM";
+                break;
+
+            default:
+                echo "Hello Basis";
+        }
+        
+        
         $this->z = $this->x + $this->y;
         if($this->z > 50){
             echo "$this->z is greater than 50";
