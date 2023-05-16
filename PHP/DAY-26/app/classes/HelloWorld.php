@@ -16,7 +16,8 @@ class HelloWorld
     }
     public function index()
     {
-         switch ($this->z)
+        $this -> z = $this->x - $this->y; 
+         switch ( $this->z )
         {
             case 10:
                 echo "Hello World";
