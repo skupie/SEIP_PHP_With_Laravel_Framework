@@ -23,7 +23,12 @@ class Home
                 'email'=>'Shakil@gmail.com',
                 'contact'=>'0167xxxxx58'
             ],
-            2=> [],
+            2=> [
+                'id'=>3,
+                'name'=>'Mustakim',
+                'email'=>'Mustakim@gmail.com',
+                'contact'=>'0140xxxxx96'
+            ],
         ];
     }
 }
