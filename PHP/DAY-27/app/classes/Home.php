@@ -31,4 +31,9 @@ class Home
             ],
         ];
     }
+    public function index(){
+        foreach($this=>students as $index=> $student){
+            echo $index;
+        }
+    }
 }
