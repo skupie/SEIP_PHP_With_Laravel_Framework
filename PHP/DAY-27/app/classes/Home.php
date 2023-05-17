@@ -13,27 +13,36 @@ class Home
         $this->students = [
             0 => [
                 'id'=>1,
-                'name'=>'Yeasin',
+                'name'=>'Yeasin ',
                 'email'=>'yeasin@gmail.com',
-                'contact'=>'0168xxxxx99'
+                'contact'=>'0168xxxxx99 ',
+                'img'=>'1.jpg',
             ],
             1 =>[
-                'id'=>1,
-                'name'=>'Shakil',
+                'id'=>2,
+                'name'=>'Shakil ',
                 'email'=>'Shakil@gmail.com',
-                'contact'=>'0167xxxxx58'
+                'contact'=>'0167xxxxx58 ',
+                'img'=>'2.jpg'
             ],
-            2=> [
-                'id'=>3,
-                'name'=>'Mustakim',
+            2=> ['id'=>3,
+                'name'=>'Mustakim ',
                 'email'=>'Mustakim@gmail.com',
-                'contact'=>'0140xxxxx96'
+                'contact'=>'0140xxxxx96 ',
+                'img'=>'3.jpg'
             ],
         ];
     }
+
     public function index(){
-        foreach($this=>students as $index=> $student){
-            echo $index;
+        //printing value from the array key:value pair
+        foreach ($this->students as $index => $student){
+
+            foreach ($student as $item){
+                echo $item;
+            }
+            echo "<br/>";
+//            echo $student['name'].' '.$student['email'].' '.$student['contact'];
         }
     }
 }
