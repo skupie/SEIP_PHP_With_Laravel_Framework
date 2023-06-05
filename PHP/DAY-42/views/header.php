@@ -30,7 +30,14 @@
             </li>
 
             <?php if(isset($_SESSION['id'])) { ?>
-                <li><a href="action.php?page=logout" class="nav-link">Logout</a></li>
+                <li class="dropdown">
+                    <a href="action.php?page=logout" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><?php echo $_SESSION['name']; ?></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="action.php?page=dashboard" class="dropdown-item">Dashboard</a></li>
+                        <li><a href="action.php?page=logout" class="dropdown-item">Logout</a></li>
+                    </ul>
+
+                </li>
             <li>
                 <a href="action.php?page=full_name" class="nav-link">Full Name</a>
             </li>
